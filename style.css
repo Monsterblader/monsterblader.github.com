@@ -1,0 +1,39 @@
+body {
+	background: black;
+}
+
+#container {
+	width: 960px;
+	margin:auto;
+}
+
+#leftColumn {
+	background-image: linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -o-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -moz-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -webkit-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -ms-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.1, rgb(167,208,209)),
+		color-stop(0.55, rgb(203,200,250)),
+		color-stop(0.78, rgb(36,113,171))
+	);
+	border: solid white 1px;
+	border-bottom: 100%;
+	border-radius: 10px;
+	float: left;
+	width: 240px;
+	color: white;
+}
+
+#rightColumn {
+	border: solid white 1px;
+	border-bottom: 100%;
+	border-radius: 10px;
+	float: right;
+	width: 720px;
+}
