@@ -25,9 +25,10 @@ body {
 	border: solid white 1px;
 	border-bottom: 100%;
 	border-radius: 10px;
-	float: left;
+	float: fixed;
 	width: 240px;
 	color: white;
+	height: 100%;
 }
 
 #rightColumn {
@@ -36,4 +37,5 @@ body {
 	border-radius: 10px;
 	float: right;
 	width: 720px;
+	color: white;
 }
