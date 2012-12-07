@@ -25,12 +25,16 @@ body {
 	);
 	border: solid white 1px;
 	border-radius: 10px;
-	float: left;
-	width: 24%;
+	position: fixed;
+	width: 230px;
 	color: white;
 	height: 100%;
 	text-align: right;
 	font-family: century gothic;
+}
+
+#leftColumn p {
+	margin-right: 10px;
 }
 
 #rightColumn {
