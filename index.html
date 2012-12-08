@@ -1,6 +1,7 @@
 <html>
 
 <head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
 </head>
@@ -13,27 +14,22 @@
 			<p>links</p>
 		</div>
 		<div id="rightColumn">
-			<div class="blogElement">
-				<div class="dateFormat">December 6, 2012</div>
-				<div class="textBody">
-				I must have spent more than an hour wondering why this wasn't showing up before I figured out that I was missing '}' before the descriptor for this formatting.  *sigh*
-				</div>
-			</div>
-			<div class="blogElement">
-				<div class="dateFormat">December 6, 2012</div>
-				<div class="textBody">
-				My page seems to be ready to capture some thoughts.
-				</div>
-			</div>
 <!--
 			<div class="blogElement">
 				<div class="dateFormat">December 6, 2012</div>
-				<div class="textBody"><div id="hm1">O</div><br/>
-					<div id="hm2">-</div><div id="hm3">|</div><div id="hm4">-</div><br/>
+				<div class="textBody"><div id="hm1">O</div>
+					<span id="hm2">-</span><span id="hm3">|</span><span id="hm4">-</span><br/>
 					<div id="hm5"> /</div><div id="hm6">\</div>
+<input type="text">
+<button onClick="playHangman()">Guess</button>
 				</div>
 			</div>
 -->
+
+			<div class="blogElement">
+				<div class="dateFormat">December 7, 2012</div>
+				<button type="button" id="gameButton" onmouseover="buttonGame()" onClick="dieButton()">Click me!</button>
+			</div>
 			<div class="blogElement">
 				<div class="dateFormat">December 6, 2012</div>
 				<div class="textBody">At class last night, the guest speaker mentioned that an interview question that he had was to shuffle a deck of cards.  I thought that I would try it.
@@ -45,6 +41,18 @@
 					AH, 2H, 3H, 4H, 5H, 6H, 7H, 8H, 9H, TH, JH, QH, KH,<br/>
 					AD, 2D, 3D, 4D, 5D, 6D, 7D, 8D, 9D, TD, JD, QD, KD,<br/>
 					AC, 2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, TC, JC, QC, KC
+				</div>
+			</div>
+			<div class="blogElement">
+				<div class="dateFormat">December 6, 2012</div>
+				<div class="textBody">
+				My page seems to be ready to capture some thoughts.
+				</div>
+			</div>
+			<div class="blogElement">
+				<div class="dateFormat">December 6, 2012</div>
+				<div class="textBody">
+				I must have spent more than an hour wondering why this wasn't showing up before I figured out that I was missing '}' before the descriptor for this formatting.  *sigh*  I imagine that that won't be the last time that something like this happens.
 				</div>
 			</div>
 		</div>

@@ -60,7 +60,8 @@ body {
 .textBody {
 	text-align: right;
 	margin-left: 25%;
-	font-family: Perpetua;
+	font-family: Rage italic;
+	font-size: 1.5em;
 	margin-right: 10px;
 	margin-bottom: 10px;
   text-shadow: 1px 1px 0px white;
@@ -69,4 +70,12 @@ body {
 .blogElement {
 	color: black;
 	background-image: url('http://www.how-to-draw-cartoons-online.com/image-files/candy_cane.gif');
+}
+
+#gameButton {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	max-width: 75px;
+	visibility: visible;
 }

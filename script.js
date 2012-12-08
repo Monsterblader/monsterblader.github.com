@@ -18,3 +18,53 @@ function shuffle() {
 	deckList = deckList.slice(0, -7);
 	document.getElementById("showDeck").innerHTML = deckList;
 }
+
+function buttonGame() {
+	var taunts = ["Is that the best you can do?",
+		"Are you coordination challenged?", "My dead goldfish can do better.",
+		"You aim like a blind man with no arms!", "Can I be like you when I grow up?",
+		"Zzzzzzzzzzzzz", "It said 'click,' not 'watch.'"];
+	var button = document.getElementById("gameButton");
+	$("#gameButton").css("font-size", '8px');
+	button.innerHTML = taunts[Math.floor(Math.random()*taunts.length)];
+	var randTop = Math.floor(Math.random()*100) - 50;
+	var randLeft = Math.floor(Math.random()*100) - 50;
+	$("#gameButton").animate({top: '+=' + randTop, left: '+=50'});
+	button.left = "100px";
+}
+
+function dieButton() {
+	document.getElementById("gameButton").innerHTML = "Aarrrrgh.  You got me!";
+	$("#gameButton").fadeOut(1000);
+}
+// function hangman() {
+	/*
+var message = "Albertisgreat";
+fuunction getLetter() {
+if (guessedLetter === first instance in string) {
+$(get letter).show;
+remove letter from string.
+if (message.length === 0) {
+$(victory message).show;
+$(button message).innerHTML = "Reset";
+$(input box).hide;
+}
+} else {
+hangCounter += 1;
+$(next body part).show;
+}
+}
+function resetHangman(){
+$(all letters and body parts).hide;
+$(input box).show;
+$(button message).innerHTML = "Guess";
+}
+wait for next input.
+	create a string that holds the hidden text.
+	get an input from user.
+	if letter is correct, show it and remove from string.
+	if letter is incorrect show body part.
+	Six chances to fail.
+	If all correct, show victory message.
+	*/
+// }
