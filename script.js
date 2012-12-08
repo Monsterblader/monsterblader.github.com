@@ -27,9 +27,11 @@ function buttonGame() {
 	var button = document.getElementById("gameButton");
 	$("#gameButton").css("font-size", '8px');
 	button.innerHTML = taunts[Math.floor(Math.random()*taunts.length)];
-	var randTop = Math.floor(Math.random()*100) - 50;
-	var randLeft = Math.floor(Math.random()*100) - 50;
-	$("#gameButton").animate({top: '+=' + randTop, left: '+=50'});
+	var randTop = Math.random()*(window.innerHeight - 100);
+	var randLeft = Math.random()*(window.innerWidth - 1000);
+	console.log(window.innerHeight+", "+window.innerWidth);
+	console.log(randTop + ", " + randLeft);
+	$("#gameButton").animate({top: randTop + "px", left: randLeft + "px"});
 	button.left = "100px";
 }
 
