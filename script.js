@@ -57,7 +57,7 @@ var showHint = function() {
 }
 
 var resetButton = function() {
-	$("gameButton").css({"top": "0px", "left": "0px", "onmouseover": "buttonGame()", "font-size": "12px", "text": "Try again?");
+	$("gameButton").css({"top": "0px", "left": "0px", "onmouseover": "buttonGame()", "font-size": "12px", "text": "Try again?"});
 }
 
 var dieButton = function() {
