@@ -30,7 +30,7 @@ var i = 0;
 var button = $("#gameButton");
 var buttonGame = function() {
   $("#gameButton").removeAttr("onmouseover");
-  $("#gameButton").css("font-size", '8px');
+  $("#gameButton").css("font-size", "8px");
   gameLoop();
 }
 
@@ -54,6 +54,10 @@ var enableButton = function() {
 
 var showHint = function() {
   $("#gameButton").html(coords[i-1]);
+}
+
+var resetButton = function() {
+	$("gameButton").css({"top": "0px", "left": "0px", "onmouseover": "buttonGame()", "font-size": "12px", "text": "Try again?");
 }
 
 var dieButton = function() {
