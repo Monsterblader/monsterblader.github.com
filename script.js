@@ -42,7 +42,9 @@ var gameLoop = function() {
     $("#gameButton").animate({top: randTop + "px", left: randLeft + "px"});
     i += 1;
     setTimeout(enableButton, 500);
-    setTimeout(gameLoop, 800);
+    setTimeout(gameLoop, 1000);
+  } else {
+  	resetButton();
   }
 }
 
