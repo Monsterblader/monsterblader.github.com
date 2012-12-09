@@ -19,26 +19,47 @@ function shuffle() {
 	document.getElementById("showDeck").innerHTML = deckList;
 }
 
-function buttonGame() {
-	var taunts = ["Is that the best you can do?",
-		"Are you coordination challenged?", "My dead goldfish can do better.",
-		"You aim like a blind man with no arms!", "Can I be like you when I grow up?",
-		"Zzzzzzzzzzzzz", "It said 'click,' not 'watch.'"];
-	var button = document.getElementById("gameButton");
-	$("#gameButton").css("font-size", '8px');
-	button.innerHTML = taunts[Math.floor(Math.random()*taunts.length)];
-	var randTop = Math.random()*(window.innerHeight - 100);
-	var randLeft = Math.random()*(window.innerWidth - 1000);
-	console.log(window.innerHeight+", "+window.innerWidth);
-	console.log(randTop + ", " + randLeft);
-	$("#gameButton").animate({top: randTop + "px", left: randLeft + "px"});
-	button.left = "100px";
+var taunts = ["Is that the best you can do?",
+  "Are you coordination challenged?", "My dead goldfish can do better.",
+  "You aim like a blind man with no arms!", "Can I be you when I grow up?",
+  "Zzzzzzzzzzzzz", "It said 'click,' not 'watch.'",
+  "There should be a minimum IQ to use this ride."];
+var coords = ["N", 3, 7, " ", 2, 4, ".", 3, 1, 5, "W", 1, 2, 2, " ", 0, 5, ".", 3, 2, 7];
+
+var i = 0;
+var button = $("#gameButton");
+var buttonGame = function() {
+  $("#gameButton").removeAttr("onmouseover");
+  $("#gameButton").css("font-size", '8px');
+  gameLoop();
 }
 
-function dieButton() {
-	document.getElementById("gameButton").innerHTML = "Aarrrrgh.  You got me!";
-	$("#gameButton").fadeOut(1000);
+var gameLoop = function() {
+  if (i < 22) {
+    $("#gameButton").html(taunts[Math.floor(Math.random()*taunts.length)]);
+    var randTop = Math.random()*(window.innerHeight);
+    var randLeft = Math.random()*(window.innerWidth);
+    $("#gameButton").animate({top: randTop + "px", left: randLeft + "px"});
+    i += 1;
+    setTimeout(enableButton, 500);
+    setTimeout(gameLoop, 800);
+  }
 }
+
+var enableButton = function() {
+  $("#gameButton").attr("onclick", "showHint()");
+}
+
+var showHint = function() {
+  $("#gameButton").html(coords[i-1]);
+}
+
+var dieButton = function() {
+  document.getElementById("gameButton").innerHTML = "Aarrrrgh.  You got me!";
+  $("#gameButton").fadeOut(1000);
+  $("#gameButton").attr("onmouseover", "buttonGame()");
+}
+
 // function hangman() {
 	/*
 var message = "Albertisgreat";
