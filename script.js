@@ -37,8 +37,8 @@ var buttonGame = function() {
 var gameLoop = function() {
   if (i < 22) {
     $("#gameButton").html(taunts[Math.floor(Math.random()*taunts.length)]);
-    var randTop = Math.random()*(window.innerHeight);
-    var randLeft = Math.random()*(window.innerWidth);
+    var randTop = Math.random()*750;
+    var randLeft = Math.random()*500;
     $("#gameButton").animate({top: randTop + "px", left: randLeft + "px"});
     i += 1;
     setTimeout(enableButton, 500);
@@ -57,11 +57,12 @@ var showHint = function() {
 }
 
 var resetButton = function() {
-	$("#gameButton").css({"top": "0px", "left": "0px", "onmouseover": "buttonGame()", "font-size": "12px"});
+	$("#gameButton").css({"top": "0px", "left": "0px", "font-size": "12px"});
 	$("#gameButton").removeAttr("onclick");
+	$("#gameButton").attr("onmouseover", "buttonGame()");
 	$("#gameButton").html("You suck.  Try again?");
-	$("#gameButton").animate({top: "0px", left: "0px"});
-	i = 0;
+/*	$("#gameButton").animate({top: "0px", left: "0px"});
+*/	i = 0;
 }
 
 var dieButton = function() {
