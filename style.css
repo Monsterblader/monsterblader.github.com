@@ -35,6 +35,8 @@ body {
 
 #leftColumn p {
 	margin-right: 10px;
+	/*font-family: 'Amatic SC', cursive;*/
+	font-family: 'Shadows Into Light', cursive;
 }
 
 #rightColumn {
@@ -55,21 +57,22 @@ body {
 .dateFormat {
 	margin-left: 10px;
 	margin-top: 10px;
+	font-family: 'Cinzel', serif;
 }
 
 .textBody {
+	color: white;
 	text-align: right;
 	margin-left: 25%;
-	font-family: Rage italic;
-	font-size: 1.5em;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 1em;
 	margin-right: 10px;
 	margin-bottom: 10px;
-  text-shadow: 1px 1px 0px white;
+  text-shadow: 1px 1px 0px black;
 }
 
 .blogElement {
 	color: black;
-	background-image: url('http://www.how-to-draw-cartoons-online.com/image-files/candy_cane.gif');
 }
 
 #gameButton {

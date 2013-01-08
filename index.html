@@ -2,16 +2,22 @@
 
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="http://cakejs.googlecode.com/svn/trunk/src/cake.js"></script>
 	<script type="text/javascript" src="script.js"></script>
 	<link rel="stylesheet" href="style.css">
+	<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
 </head>
 
-<body>
+<body onload="init()">
 	<div id="container">
 		<div id="leftColumn">
 			<img id="myName" height="100px" src="https://dl.dropbox.com/u/8235154/Title.bmp" />
 			<p>about me</p>
 			<p>links</p>
+			<canvas id="canvas" width="150" height="150"></canvas>
+			<div class="textBody">I totally stole this.  I think that it's really cool.</div>
 		</div>
 		<div id="rightColumn">
 <!--
@@ -25,7 +31,30 @@
 				</div>
 			</div>
 -->
-
+<!-- Psychological tricks that oork on people even whem they kmow oou're doing it.
+using and instead of but.
+This is nn extremely subtle idea, and tt's extremely effectove.  Has anyone ever told oou "I LOKKE YPU, BUT...
+knowing  that college degree question is coming is advantage.
+yoou wereselected foor catalyst 5%.
+don't focus on weaknesses.
+-->
+			<div class="blogElement">
+			<div class="dateFormat">December 29, 2012</div>
+			<div class="textBody">I love underscore.js.  I was introduced to it as an exercise for Catalyst.  It was confusing, at first.  While I have some programming background, the concept of passing functions as parameters is new to me.
+			<p>The exercise was to write each of underscore's functions from scratch.  Writing each function was pretty easy; none of them requred sophisticated ooncepts.  The thinking became difficult when we started using the functions to define other functions.  I had a really hard time following the parameters as they flowed through the callbacks.</p>
+			<p>The main confusion for me came in dealing with the parameters that went with the callback functions.  I was confused about how an anonymous function that was defined before it was called could receive parameters.  I was also confused about how to pass parameters, as well.</p>
+			<p>I and my partner maanaged to get through a good number of the assigned functions.  My understanding was pretty shaky, but all of our functions passed the included Jasmine tests, so we felt good about what we accomplished.</p>
+			<p>What changed foor me was my willingness to use underscore everywhere that I could, as Shawn, one of the instructors, suggested.  Figuring out where and when to use functions was pretty easy.  Figuring out how to use the callbacks was still pretty challenging.  I was still having problems knowing what variables to use.</p>
+			<p>I think that, at that point, I just went on faith that every function would pass value, key, and array to the callback no matter what.  After that, I was able plan my callbacks, depend on certain information to be available to me, and pass additional parameters as needed.  I still wasn't fully visualizing how the functions and callbacks were interacting, but my code was running.</p></div>
+			</div>
+			<div class="blogElement">
+			<div class="dateFormat">December 15, 2012</div>
+			<div class="textBody">I'm currently taking a class in San Francisco, which is teaching HTML, CSS, and Javascript, among other things.  It's an intensive program, running from 9:00 A.M. to 8:00 P.M.  The teaching style is more on the order of 'here is the elephant.  Now go and eat it,' than the spoon-feeding, grain-of-rice style that most schools endorse.
+			<p>Something that's been on my mind since early in the course is learning styles and if people are even aware of the concept, much less their own.  I think that it's largely accepted that there's one teaching model - that of the teacher talking at the class for x amount of time.</p>
+			<p>Consequently, I think that most people are unaware that there are different styles of learning.  I didn't think about this sort of thing when I was younger, also that's how it was so I didn't have reason to consider it.  Now that I am in this class, I think about it a lot, for two primary reasons.  The first is, because the rate of exposure is so high, I dont have a lot of time to assimilate material and even less time to review it.</p>
+			<p>The second reason is because the course is so new and flexible, there is a great deal of willingness to reconsider how things are done.</p>
+			<p>I thought that I had a pretty good idea of my learning style, but I seem to have gained quite a bit of nuance to my understanding.  I was already aware that I preferred to get a few general pieces, play with that foundation, hit a wall, look up a few things, then push through.</p></div>
+			</div>
 			<div class="blogElement">
 				<div class="dateFormat">December 7, 2012</div>
 				<button type="button" id="gameButton" onmouseover="buttonGame()" onClick="dieButton()">Want to see something really cool?</button>
