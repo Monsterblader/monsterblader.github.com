@@ -2,90 +2,113 @@
 
 <head>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="http://cakejs.googlecode.com/svn/trunk/src/cake.js"></script>
-	<script type="text/javascript" src="script.js"></script>
-	<link rel="stylesheet" href="style.css">
-	<link href='http://fonts.googleapis.com/css?family=Cinzel' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
-	<link href='http://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
+  <script type="text/javascript" src="script.js"></script>
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="style.css">
+  <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
+  <title>Meet Albert Lee</title>
 </head>
 
-<body onload="init()">
-	<div id="container">
-		<div id="leftColumn">
-			<img id="myName" height="100px" src="https://dl.dropbox.com/u/8235154/Title.bmp" />
-			<p>about me</p>
-			<p>links</p>
-			<canvas id="canvas" width="150" height="150"></canvas>
-			<div class="textBody">I totally stole this.  I think that it's really cool.</div>
-		</div>
-		<div id="rightColumn">
-<!--
-			<div class="blogElement">
-				<div class="dateFormat">December 6, 2012</div>
-				<div class="textBody"><div id="hm1">O</div>
-					<span id="hm2">-</span><span id="hm3">|</span><span id="hm4">-</span><br/>
-					<div id="hm5"> /</div><div id="hm6">\</div>
-<input type="text">
-<button onClick="playHangman()">Guess</button>
-				</div>
-			</div>
--->
-<!-- Psychological tricks that oork on people even whem they kmow oou're doing it.
-using and instead of but.
-This is nn extremely subtle idea, and tt's extremely effectove.  Has anyone ever told oou "I LOKKE YPU, BUT...
-knowing  that college degree question is coming is advantage.
-yoou wereselected foor catalyst 5%.
-don't focus on weaknesses.
--->
-			<div class="blogElement">
-			<div class="dateFormat">December 29, 2012</div>
-			<div class="textBody">I love underscore.js.  I was introduced to it as an exercise for Catalyst.  It was confusing, at first.  While I have some programming background, the concept of passing functions as parameters is new to me.
-			<p>The exercise was to write each of underscore's functions from scratch.  Writing each function was pretty easy; none of them requred sophisticated ooncepts.  The thinking became difficult when we started using the functions to define other functions.  I had a really hard time following the parameters as they flowed through the callbacks.</p>
-			<p>The main confusion for me came in dealing with the parameters that went with the callback functions.  I was confused about how an anonymous function that was defined before it was called could receive parameters.  I was also confused about how to pass parameters, as well.</p>
-			<p>I and my partner maanaged to get through a good number of the assigned functions.  My understanding was pretty shaky, but all of our functions passed the included Jasmine tests, so we felt good about what we accomplished.</p>
-			<p>What changed foor me was my willingness to use underscore everywhere that I could, as Shawn, one of the instructors, suggested.  Figuring out where and when to use functions was pretty easy.  Figuring out how to use the callbacks was still pretty challenging.  I was still having problems knowing what variables to use.</p>
-			<p>I think that, at that point, I just went on faith that every function would pass value, key, and array to the callback no matter what.  After that, I was able plan my callbacks, depend on certain information to be available to me, and pass additional parameters as needed.  I still wasn't fully visualizing how the functions and callbacks were interacting, but my code was running.</p></div>
-			</div>
-			<div class="blogElement">
-			<div class="dateFormat">December 15, 2012</div>
-			<div class="textBody">I'm currently taking a class in San Francisco, which is teaching HTML, CSS, and Javascript, among other things.  It's an intensive program, running from 9:00 A.M. to 8:00 P.M.  The teaching style is more on the order of 'here is the elephant.  Now go and eat it,' than the spoon-feeding, grain-of-rice style that most schools endorse.
-			<p>Something that's been on my mind since early in the course is learning styles and if people are even aware of the concept, much less their own.  I think that it's largely accepted that there's one teaching model - that of the teacher talking at the class for x amount of time.</p>
-			<p>Consequently, I think that most people are unaware that there are different styles of learning.  I didn't think about this sort of thing when I was younger, also that's how it was so I didn't have reason to consider it.  Now that I am in this class, I think about it a lot, for two primary reasons.  The first is, because the rate of exposure is so high, I dont have a lot of time to assimilate material and even less time to review it.</p>
-			<p>The second reason is because the course is so new and flexible, there is a great deal of willingness to reconsider how things are done.</p>
-			<p>I thought that I had a pretty good idea of my learning style, but I seem to have gained quite a bit of nuance to my understanding.  I was already aware that I preferred to get a few general pieces, play with that foundation, hit a wall, look up a few things, then push through.</p></div>
-			</div>
-			<div class="blogElement">
-				<div class="dateFormat">December 7, 2012</div>
-				<button type="button" id="gameButton" onmouseover="buttonGame()" onClick="dieButton()">Want to see something really cool?</button>
-			</div>
-			<div class="blogElement">
-				<div class="dateFormat">December 6, 2012</div>
-				<div class="textBody">At class last night, the guest speaker mentioned that an interview question that he had was to shuffle a deck of cards.  I thought that I would try it.
-				<p>I probably spent more time looking up the correct use of functions than determining the algorithm.</p>
-				<p>Press the button to shuffle a deck of cards.</p>
-					<button onClick="shuffle()">Shuffle</button>
-				<div>Here is your deck:</div>
-				<p id="showDeck">AS, 2S, 3S, 4S, 5S, 6S, 7S, 8S, 9S, TS, JS, QS, KS,<br/>
-					AH, 2H, 3H, 4H, 5H, 6H, 7H, 8H, 9H, TH, JH, QH, KH,<br/>
-					AD, 2D, 3D, 4D, 5D, 6D, 7D, 8D, 9D, TD, JD, QD, KD,<br/>
-					AC, 2C, 3C, 4C, 5C, 6C, 7C, 8C, 9C, TC, JC, QC, KC
-				</div>
-			</div>
-			<div class="blogElement">
-				<div class="dateFormat">December 6, 2012</div>
-				<div class="textBody">
-				My page seems to be ready to capture some thoughts.
-				</div>
-			</div>
-			<div class="blogElement">
-				<div class="dateFormat">December 6, 2012</div>
-				<div class="textBody">
-				I must have spent more than an hour wondering why this wasn't showing up before I figured out that I was missing '}' before the descriptor for this formatting.  *sigh*  I imagine that that won't be the last time that something like this happens.
-				</div>
-			</div>
-		</div>
-	</div>
+<body onload="showProjectDetails('aboutMe')">
+  <div id="container">
+    <div class="topBox">
+      <div class="introtoMe"><b>A l b e r t &nbsp L e e</b></div>
+    </div>
+    <div class="aboutMe link"></div>
+    <div class="bigSpacer"></div>
+    <div class="me">
+      <img src="Albert.jpg" class="Albert" onmouseover="showProjectDetails('aboutMe')">
+    </div>
+    <div class="side">
+      <div>
+        <div class="spacer"></div>
+        <div class="box">
+          <a href="http://github.com/Monsterblader" class="hyperlink">
+            gitHub
+            <img src="github.png" class="icon">
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+        <div class="spacer"></div>
+        <div class="box">
+          <a href="#" class="hyperlink">
+            blog
+          </a>
+        </div>
+      </div>
+      <div class="rowSpacer"></div>
+      <div>
+        <div class="spacer"></div>
+        <div class="box">
+          <a href="http://www.linkedin.com/pub/albert-lee/3/92a/584/" class="hyperlink">
+            Linkedin
+            <img src="linkedin.jpg" class="icon">
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+      </div>
+      <div class="rowSpacer"></div>
+      <div>
+        <div class="spacer"></div>
+        <div class="box">
+          <a href="https://dl.dropbox.com/u/8235154/Albert%20Lee.docx" class="hyperlink">
+            resume
+            <img src="word.jpg" class="icon">
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+      </div>
+      <div class="rowSpacer"></div>
+      <div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+      </div>
+    </div>
+    <div class="bottomSpacer"></div>
+    <div>
+      <div class="box projectDescriptions"><b><u>My projects</u></b>
+        <p>Hover on a box to the right for a description
+        <p>Click to see it live
+      </div>
+      <div class="spacer"></div>
+      <div class="box" onmouseover="showProjectDetails('aboutPnF')">
+        <a href="http://Monsterblader.meteor.com" class="hyperlink">
+          P and F
+          <img src="PnF.jpg" class="hyperlink icon">
+        </a>
+      </div>
+      <div class="spacer"></div>
+      <div class="box">
+      <!--div class="box" onmouseover="showProjectDetails('aboutData')">
+        <a href="https://dl.dropbox.com/u/8235154/data-analytics/app/index.html" class="hyperlink">
+          Data
+        </a-->
+      </div>
+      <div class="spacer"></div>
+      <div class="box"></div>
+      <div class="spacer"></div>
+      <div class="box"></div>
+      <div class="spacer"></div>
+      <div class="box"></div>
+      <div class="spacer"></div>
+      <div class="box"></div>
+      <div class="spacer"></div>
+      <div class="box">
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>

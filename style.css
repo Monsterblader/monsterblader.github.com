@@ -1,84 +1,135 @@
 body {
-	background: black;
+	background-color: #222;
+/*	background-image: url("background.jpg");
+*/	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center top;
+	font-family: 'Julius Sans One', sans-serif;
+	color: #ccc;
+}
+
+.Albert {
+	height: 370px;
+}
+
+.icon {
+	width: 45px;
 }
 
 #container {
 	width: 960px;
+	height: 480px;
 	margin-left: auto;
 	margin-right: auto;
 }
 
-#leftColumn {
-	background-image: linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
-	background-image: -o-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
-	background-image: -moz-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
-	background-image: -webkit-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
-	background-image: -ms-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+.hyperLink {
+	color: white;
+}
 
-	background-image: -webkit-gradient(
-		linear,
-		left bottom,
-		left top,
-		color-stop(0.1, rgb(167,208,209)),
-		color-stop(0.55, rgb(203,200,250)),
-		color-stop(0.78, rgb(36,113,171))
-	);
-	border: solid white 1px;
+.basicTheme {
+	background-color: gray;
 	border-radius: 10px;
-	position: fixed;
-	width: 230px;
 	color: white;
-	height: 100%;
-	text-align: right;
-	font-family: century gothic;
 }
 
-#leftColumn p {
-	margin-right: 10px;
-	/*font-family: 'Amatic SC', cursive;*/
-	font-family: 'Shadows Into Light', cursive;
+.invisible {
+	background-color: #222;
 }
 
-#rightColumn {
-	border: solid white 1px;
-	border-bottom: 100%;
-	border-radius: 10px;
-	float: right;
-	width: 74%;
-	color: white;
-	background-color: green;
-	font-family: cooper black;
+.link {
+	background-color: #ccc;
+	color: #222;
 }
 
-#myName {
-	margin: 10px;
+.topBox {
+	height: 75px;
+	width: 960px;
 }
 
-.dateFormat {
-	margin-left: 10px;
-	margin-top: 10px;
-	font-family: 'Cinzel', serif;
+.introtoMe {
+	text-align: bottom-left;
+	font-size: 32;
+	padding: 30px 0px 0px 0px;
 }
 
-.textBody {
-	color: white;
-	text-align: right;
-	margin-left: 25%;
-	font-family: 'Shadows Into Light', cursive;
-	font-size: 1em;
-	margin-right: 10px;
-	margin-bottom: 10px;
-  text-shadow: 1px 1px 0px black;
+.box {
+	width: 75px;
+	height: 75px;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: #111;
+	float: left;
+	text-align: center;
 }
 
-.blogElement {
-	color: black;
+.leftLinks {
+	width: 95px;
+	float: left;
 }
 
-#gameButton {
-	position: relative;
-	top: 0px;
-	left: 0px;
-	max-width: 75px;
-	visibility: visible;
+.shortRowSpacer {
+	width: 95px;
+	height: 10px;
+	float: left;
+}
+
+.aboutMe {
+	width: 265px;
+	height: 360px;
+	padding: 5px;
+	border-radius: 5px;
+	float: left;
+}
+
+.header {
+	font-style: italic;
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 16px;
+}
+
+.side {
+	width: 300px;
+	height: 370px;
+	float: left;
+}
+
+.bigSpacer {
+	width: 10px;
+	height: 370px;
+	float: left;
+}
+
+.me {
+	width: 345px;
+	height: 370px;
+	padding-left: 25px;
+	float: left;
+}
+
+.spacer {
+	width: 10px;
+	height: 75px;
+	float: left;
+}
+
+.rowSpacer {
+	width: 300px;
+	height: 10px;
+	float: left;
+}
+
+.bottomSpacer {
+	width: 960px;
+	height: 10px;
+	float: left;
+}
+
+.projectDescriptions {
+	width: 265px;
+}
+
+.projectDescriptions p {
+	font-size: 10px;
 }

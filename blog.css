@@ -1,0 +1,84 @@
+body {
+	background: black;
+}
+
+#container {
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+#leftColumn {
+	background-image: linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -o-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -moz-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -webkit-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+	background-image: -ms-linear-gradient(bottom, rgb(167,208,209) 10%, rgb(203,200,250) 55%, rgb(36,113,171) 78%);
+
+	background-image: -webkit-gradient(
+		linear,
+		left bottom,
+		left top,
+		color-stop(0.1, rgb(167,208,209)),
+		color-stop(0.55, rgb(203,200,250)),
+		color-stop(0.78, rgb(36,113,171))
+	);
+	border: solid white 1px;
+	border-radius: 10px;
+	position: fixed;
+	width: 230px;
+	color: white;
+	height: 100%;
+	text-align: right;
+	font-family: century gothic;
+}
+
+#leftColumn p {
+	margin-right: 10px;
+	/*font-family: 'Amatic SC', cursive;*/
+	font-family: 'Shadows Into Light', cursive;
+}
+
+#rightColumn {
+	border: solid white 1px;
+	border-bottom: 100%;
+	border-radius: 10px;
+	float: right;
+	width: 74%;
+	color: white;
+	background-color: green;
+	font-family: cooper black;
+}
+
+#myName {
+	margin: 10px;
+}
+
+.dateFormat {
+	margin-left: 10px;
+	margin-top: 10px;
+	font-family: 'Cinzel', serif;
+}
+
+.textBody {
+	color: white;
+	text-align: right;
+	margin-left: 25%;
+	font-family: 'Shadows Into Light', cursive;
+	font-size: 1em;
+	margin-right: 10px;
+	margin-bottom: 10px;
+  text-shadow: 1px 1px 0px black;
+}
+
+.blogElement {
+	color: black;
+}
+
+#gameButton {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	max-width: 75px;
+	visibility: visible;
+}
