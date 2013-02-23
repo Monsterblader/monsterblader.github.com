@@ -1,9 +1,5 @@
 body {
 	background-color: #222;
-/*	background-image: url("background.jpg");
-*/	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: center top;
 	font-family: 'Julius Sans One', sans-serif;
 	color: #ccc;
 }
@@ -57,7 +53,7 @@ body {
 	width: 75px;
 	height: 75px;
 	padding: 5px;
-	border-radius: 5px;
+	border-radius: 10px;
 	background-color: #111;
 	float: left;
 	text-align: center;
