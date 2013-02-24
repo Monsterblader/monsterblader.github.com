@@ -2,10 +2,8 @@
 <html>
 
 <head>
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-  <script type="text/javascript" src="bootstrap/js/bootstrap.js"></script>
-  <script type="text/javascript" src="script.js"></script>
-  <link rel="stylesheet" href="bootstrap/css/bootstrap.css" media="screen">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" media="screen">
+  <link rel="stylesheet" href="http://dev.iceburg.net/jquery/jqModal/jqModal.css">
   <link rel="stylesheet" href="style.css">
   <link href='http://fonts.googleapis.com/css?family=Julius+Sans+One' rel='stylesheet' type='text/css'>
   <title>Meet Albert Lee</title>
@@ -25,11 +23,36 @@
       <div>
         <div class="spacer"></div>
         <div class="box">
-          <a href="http://github.com/Monsterblader" class="hyperlink">
+          <a href="http://github.com/Monsterblader" target="_blank" class="hyperlink">
             gitHub
             <img src="github.png" class="icon">
           </a>
         </div>
+        <div class="spacer"></div>
+        <div class="box">
+          <a href="http://www.linkedin.com/pub/albert-lee/3/92a/584/" target="_blank" class="hyperlink">
+            Linkedin
+            <img src="linkedin.jpg" class="icon">
+          </a>
+        </div>
+        <div class="spacer"></div>
+        <div href="#myModal" class="box resume" data-toggle="modal">
+            Resume
+            <img src="resume.jpg" class="icon">
+          </a>
+        </div>
+      </div>
+      <div class="rowSpacer"></div>
+      <div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+        <div class="spacer"></div>
+        <div class="box"></div>
+      </div>
+      <div class="rowSpacer"></div>
+      <div>
         <div class="spacer"></div>
         <div class="box"></div>
         <div class="spacer"></div>
@@ -39,32 +62,6 @@
             <img src="blog.jpg" class="icon">
           </a>
         </div>
-      </div>
-      <div class="rowSpacer"></div>
-      <div>
-        <div class="spacer"></div>
-        <div class="box">
-          <a href="http://www.linkedin.com/pub/albert-lee/3/92a/584/" class="hyperlink">
-            Linkedin
-            <img src="linkedin.jpg" class="icon">
-          </a>
-        </div>
-        <div class="spacer"></div>
-        <div class="box"></div>
-        <div class="spacer"></div>
-        <div class="box"></div>
-      </div>
-      <div class="rowSpacer"></div>
-      <div>
-        <div class="spacer"></div>
-        <div class="box">
-          <a href="https://dl.dropbox.com/u/8235154/Albert%20Lee.pdf" class="hyperlink">
-            resume
-            <img src="pdf.jpg" class="icon">
-          </a>
-        </div>
-        <div class="spacer"></div>
-        <div class="box"></div>
         <div class="spacer"></div>
         <div class="box"></div>
       </div>
@@ -86,7 +83,7 @@
       </div>
       <div class="spacer"></div>
       <div class="box" onmouseover="showProjectDetails('aboutPnF')">
-        <a href="http://Monsterblader.meteor.com" class="hyperlink">
+        <a href="http://Monsterblader.meteor.com" target="_blank" class="hyperlink">
           P and F
           <img src="PnF.jpg" class="hyperlink icon">
         </a>
@@ -111,6 +108,56 @@
       </div>
     </div>
   </div>
+
+  <!-- Modal -->
+  <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+      <h2 id="myModalLabel">Albert Lee
+      <div class="pdfBtn"><a href="https://dl.dropbox.com/u/8235154/Albert%20Lee.pdf" role="button" class="btn" data-toggle="modal">.pdf version</a></div></h2>
+    </div>
+    <div class="modal-body">
+      <div class="span2">Albert@blader.com</div>
+      <div class="span2"><a href="http://www.github.com/Monsterblader" target="_blank" class="rightText">My gitHub</a></div>
+      <div class="span2"><a href="http://www.linkedin.com/pub/albert-lee/3/92a/584/" target="_blank" class="rightText">My Linkedin</a></div>
+      <br /><h3>SKILLS and TRAINING:</h3>
+      HTML and CSS
+      <br />Javascript
+      <br />Nodejs
+      <br />Meteorjs
+      <br />Backbone.js
+      <br />Coffeescript
+      <br />Ruby on Rails
+      <br />Sinatra
+      <br />SQL
+      <br />Java
+      <br /><h3>PROFESSIONAL EXPERIENCE:</h3>
+      <p><h4>Database/VBA experience:</h4></p>
+      <b>MG Constructors and Engineers</b><div class="rightText">5/2011-11/2012</div>
+      <br />Develop and maintain an customer order database using FileMaker
+      <p></p><b>Nextel Communications - Boston, MA</b><div class="rightText">10/2006-6/2007</div>
+      <br />Expanded functionality of Microsoft-Excel-based, data-processing tool by modifying and augmenting the existing VBA code.
+      <p></p><b>Nextel Communications - New Orleans, LA</b><div class="rightText">5/2005-9/2006</div>
+      <br />Update and merge Wizard-propagation-tool databases for Sprint-Nextel office merger.
+      <p></p><b>Starlite Ballroom - Santa Clara, CA</b><div class="rightText">8/2000-4/2003</div>
+      <br />Design and program a database to track student lessons and purchases and generate reports using Microsoft Access ’97 and VBA programming.
+      <p></p><h4>Other experience:</h4>
+      Managed and maintained single and multi-unit rental properties  2003-present
+      <p></p><b>Nextel Communications</b><div class="rightText">Various 1995-2007</div>
+      <br /><b>Sprint PCS</b>
+      <br /><b>Nokia</b>
+      <br /><b>Telemar</b>
+      <br /><b>Pacific Bell Mobile Services</b>
+      <p></p><h3>EDUCATION:</h3>
+      <p></p><a href="http://www.hackreactor.com" target="_blank">Web-developer Bootcamp, Hack Reactor</a><div class="rightText">2013</div>
+      <br />B.S., Engineering and Applied Sciences, California Institute of Technology<div class="rightText">1993</div>
+    </div>
+    <div class="modal-footer">
+    </div>
+  </div>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
