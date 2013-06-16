@@ -144,7 +144,7 @@ body {
 }
 
 .rightText {
-	text-align: right;
+	float: right;
 }
 
 #myModal {
@@ -153,6 +153,5 @@ body {
 }
 
 .pdfBtn {
-	float: right;
 	padding-right: 20px;
 }
