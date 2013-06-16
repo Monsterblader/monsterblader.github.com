@@ -9,34 +9,35 @@
   <title>Meet Albert Lee</title>
 </head>
 
-<body onload="showProjectDetails('aboutMe')">
+<body onload="showProjectDetails('aboutMe');">
   <div id="container">
     <div class="topBox">
-      <div class="introtoMe"><b>A l b e r t &nbsp L e e</b></div>
+      <div class="introtoMe"><b>A l b e r t &nbsp; L e e</b></div>
     </div>
     <div class="aboutMe link"></div>
     <div class="bigSpacer"></div>
     <div class="me">
-      <img src="Albert.jpg" class="Albert" onmouseover="showProjectDetails('aboutMe')">
+      <img src="assets/Albert.jpg" class="Albert" onmouseover="showProjectDetails('aboutMe');">
     </div>
     <div class="side">
       <div>
         <div class="spacer"></div>
         <div class="box">
-          <a href="http://github.com/Monsterblader" target="_blank" class="hyperlink">
+          <a href="http://github.com/Monsterblader" target="_blank" class="hyperLink">
             gitHub
-            <img src="github.png" class="icon">
+            <img src="assets/github.png" class="icon">
           </a>
         </div>
         <div class="spacer"></div>
         <div class="box">
-          <a href="http://www.linkedin.com/pub/albert-lee/3/92a/584/" target="_blank" class="hyperlink">
+          <a href="http://www.linkedin.com/pub/albert-lee/3/92a/584/" target="_blank" class="hyperLink">
             Linkedin
             <img src="linkedin.jpg" class="icon">
           </a>
         </div>
         <div class="spacer"></div>
-        <div href="#myModal" class="box resume" data-toggle="modal">
+				<div>
+					<a href="#myModal" class="box resume" data-toggle="modal">
             Resume
             <img src="resume.jpg" class="icon">
           </a>
@@ -57,7 +58,7 @@
         <div class="box"></div>
         <div class="spacer"></div>
         <div class="box">
-          <a href="blog.html" class="hyperlink">
+          <a href="blog.html" class="hyperLink">
             blog
             <img src="blog.jpg" class="icon">
           </a>
@@ -77,15 +78,15 @@
     </div>
     <div class="bottomSpacer"></div>
     <div>
-      <div class="box projectDescriptions"><b><u>My projects</u></b>
+      <div class="box projectDescriptions"><b>My projects</b>
         <p>Hover on a box to the right for a description
         <p>Click to see it live
       </div>
       <div class="spacer"></div>
-      <div class="box" onmouseover="showProjectDetails('aboutPnF')">
-        <a href="http://Monsterblader.meteor.com" target="_blank" class="hyperlink">
+      <div class="box" onmouseover="showProjectDetails('aboutPnF');">
+        <a href="http://Monsterblader.meteor.com" target="_blank" class="hyperLink">
           P and F
-          <img src="PnF.jpg" class="hyperlink icon">
+          <img src="PnF.jpg" class="hyperLink icon">
         </a>
       </div>
       <div class="spacer"></div>
@@ -113,28 +114,21 @@
   <div id="myModal" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-      <h2 id="myModalLabel">Albert Lee
-      <div class="pdfBtn"><a href="https://dl.dropbox.com/u/8235154/Albert%20Lee.pdf" role="button" class="btn" data-toggle="modal">.pdf version</a></div></h2>
+      <h2 id="myModalLabel">Albert Lee</h2>
+      <div class="pdfBtn"><a href="https://dl.dropbox.com/u/8235154/Albert%20Lee.pdf" role="button" class="btn" data-toggle="modal">.pdf version</a></div>
     </div>
     <div class="modal-body">
       <div class="span2">Albert@blader.com</div>
       <div class="span2"><a href="http://www.github.com/Monsterblader" target="_blank" class="rightText">My gitHub</a></div>
       <div class="span2"><a href="http://www.linkedin.com/pub/albert-lee/3/92a/584/" target="_blank" class="rightText">My Linkedin</a></div>
-      <br /><h3>SKILLS and TRAINING:</h3>
-      HTML and CSS
-      <br />Javascript
-      <br />Nodejs
-      <br />Meteorjs
-      <br />Backbone.js
-      <br />Coffeescript
-      <br />Ruby on Rails
-      <br />Sinatra
-      <br />SQL
-      <br />Java
       <br /><h3>PROFESSIONAL EXPERIENCE:</h3>
-      <p><h4>Database/VBA experience:</h4></p>
-      <b>MG Constructors and Engineers</b><div class="rightText">5/2011-11/2012</div>
-      <br />Develop and maintain an customer order database using FileMaker
+      <b>Seed Change</b><div class="rightText">4/2013-6/2013</div>
+      <br />Implement UI features using external API's in an XAMPP stack.
+      <p></p><b>Happy Inspector</b><div class="rightText">3/2013-4/2013</div>
+      <br />Update and modify templates that render user data using HTML, CSS, SASS, and doT.js.
+      <h4>Database/VBA experience:</h4>
+			<b>MG Constructors and Engineers</b><div class="rightText">5/2011-11/2012</div>
+			<br />Develop and maintain an customer order database using FileMaker
       <p></p><b>Nextel Communications - Boston, MA</b><div class="rightText">10/2006-6/2007</div>
       <br />Expanded functionality of Microsoft-Excel-based, data-processing tool by modifying and augmenting the existing VBA code.
       <p></p><b>Nextel Communications - New Orleans, LA</b><div class="rightText">5/2005-9/2006</div>
@@ -148,6 +142,8 @@
       <br /><b>Nokia</b>
       <br /><b>Telemar</b>
       <br /><b>Pacific Bell Mobile Services</b>
+      <br /><h3>SKILLS and TRAINING:</h3>
+      HTML and CSS, SASS, JavaScript, Node.js, Meteor.js, Backbone.js, jQuery, Ruby on Rails, PHP, SQL, Java
       <p></p><h3>EDUCATION:</h3>
       <p></p><a href="http://www.hackreactor.com" target="_blank">Web-developer Bootcamp, Hack Reactor</a><div class="rightText">2013</div>
       <br />B.S., Engineering and Applied Sciences, California Institute of Technology<div class="rightText">1993</div>
